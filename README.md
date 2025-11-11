@@ -1,5 +1,21 @@
-# HyperGLLM
-Code &amp; dataset for AAAI26 Paper "HyperGLLM: An Efficient Framework for Endpoint Threat Detection via Hypergraph-Enhanced Large Language Models".
+# <div align="center">HyperGLLM: An Efficient Framework for Endpoint Threat Detection via Hypergraph-Enhanced Large Language Models<div>
+<div align="center">
+<p><strong>An efficient framework that introduces hypergraph reasoning into LLMs for malicious behavior detection in EDR logs.</strong></p>
+<a href="https://huggingface.co/datasets/The_data_will_be_released_upon_acceptance_of_the_paper./" target="_blank"><img src=https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace%20Dataset-23999a.svg></a>
+<a href="https://github.com/"><img alt="License" src="https://img.shields.io/badge/License-MIT-green.svg"></a>
+<a><img alt="Static Badge" src="https://img.shields.io/badge/made_with-Python-blue"></a>
+</div>
+
+<h4 align="center">
+
+<p>
+<a href="#overview">Overview</a> |
+<a href="#sparkles-features">Features</a> |  
+<a href="#page_with_curl-changelog">Changelog</a> |
+<a href="#rocket-quick-start">Quick-Start</a> |
+<a href="#floppy_disk-dataset">Dataset</a> |
+<a href="#raised_hands-faqs"> FAQs</a> 
+</p>
 
 ## Overview
 
