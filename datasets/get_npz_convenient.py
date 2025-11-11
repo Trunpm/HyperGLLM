@@ -87,7 +87,7 @@ used_keys = {'action_type': [6, 12.09, 14.0, 14], 'addr_family': [7, 7.41, 8.0, 
     }
 list_key_dims = [len(k)+int(np.ceil(v[2])) for k, v in used_keys.items()]
 MAXdim = max(list_key_dims)
-# 11643
+
 
 
 
@@ -183,16 +183,16 @@ def process_files_concurrently(args, max_workers=64):
 
 
 if __name__ == "__main__": 
-    save_fold = "Meta_data"
+    save_fold = "Meta_data_cleaned"
     os.makedirs(save_fold, exist_ok=True)
-    for filename in ["TRAIN.json", "TEST.json", "TEST_forUnknownAttack.json"]:
+    for filename in ["Data_lists_cleaned/TRAIN.json", "Data_lists_cleaned/TEST.json", "Data_lists_cleaned/TEST_forUnknownAttack.json"]:
         with open(filename, "r", encoding="utf-8") as file:
             data = json.load(file)
         args = [(item["file_path"], item["true_idx"], item["time_len"], 2048, save_fold) for item in data]
         RESULTS = process_files_concurrently(args)
         
     # ###读取测试
-    # with gzip.open("./Meta_data_npz/virus_20241130-20@Win32_TrojanDownloader.Upatre@9c1362dd26449ef67937d746b83c9771_marked.log.pkl.gz", "rb") as f:
+    # with gzip.open("./Meta_data_cleaned/xxx.pkl.gz", "rb") as f:
     #     loaded_data = pickle.load(f)
     # all_line_values = loaded_data["all_line_values"]
     # all_line_masks = loaded_data["all_line_masks"]
