@@ -2,7 +2,7 @@
 
 Download the experimental `Data_lists_cleaned` from [Data_lists_cleaned repo](https://huggingface.co/datasets/The_data_will_be_released_upon_acceptance_of_the_paper) and extract them into the `Data_lists_cleaned/` directory to obtain `Families.json`, `TRAIN.json`, `TEST.json` and `TEST_forUnknownAttack.json`.
 
-Download the meta data from [Meta_data_cleaned repo](https://huggingface.co/datasets/The_data_will_be_released_upon_acceptance_of_the_paper) and extract it into the `Meta_data_cleaned/` directory.
+Download the `Meta_data_cleaned` from [Meta_data_cleaned repo](https://huggingface.co/datasets/The_data_will_be_released_upon_acceptance_of_the_paper) and extract it into the `Meta_data_cleaned/` directory.
 
 **File descriptions:**  
    - `Data_lists_cleaned/` — Directory containing all data lists needed for both the main experiments and the ablation study.
