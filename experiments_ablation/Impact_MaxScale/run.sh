@@ -5,9 +5,9 @@
 
 ###S24
 torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TRAIN.json" \
---datasets_fnspath "../../datasets/" \
+--datasets_fnspath "../../datasets/Data_lists_cleaned/" \
 --datasets_fnsname "Families.json" \
 --output_dir "./trainer_dir_paramS24HY4/" \
 --model_path "/home/jovyan/h800fast/shared/models/Qwen/Qwen2_5/" \
@@ -34,12 +34,12 @@ torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.p
 --warmup_ratio 0.03 \
 --save_strategy "steps" \
 --save_steps 10000 \
---logging_steps 100 \
+--logging_steps 100
 
 
 
 python test.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TEST.json" \
 --output_dir "./test_dir_paramS24HY4/" \
 --model_path "./trainer_dir_paramS24HY4/" \
@@ -51,7 +51,7 @@ python test.py \
 --batch_size 32 \
 --max_new_tokens 64 \
 --do_sample 0 \
---flag "@30000" \
+--flag "@30000"
 
 
 
@@ -61,7 +61,7 @@ python test.py \
 
 ###S32
 torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TRAIN.json" \
 --datasets_fnspath "../../datasets/" \
 --datasets_fnsname "Families.json" \
@@ -90,12 +90,12 @@ torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.p
 --warmup_ratio 0.03 \
 --save_strategy "steps" \
 --save_steps 10000 \
---logging_steps 100 \
+--logging_steps 100
 
 
 
 python test.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TEST.json" \
 --output_dir "./test_dir_paramS32HY4/" \
 --model_path "./trainer_dir_paramS32HY4/" \
@@ -107,7 +107,7 @@ python test.py \
 --batch_size 32 \
 --max_new_tokens 64 \
 --do_sample 0 \
---flag "@30000" \
+--flag "@30000"
 
 
 
@@ -118,9 +118,9 @@ python test.py \
 
 ###S40
 torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TRAIN.json" \
---datasets_fnspath "../../datasets/" \
+--datasets_fnspath "../../datasets/Data_lists_cleaned/" \
 --datasets_fnsname "Families.json" \
 --output_dir "./trainer_dir_paramS40HY4/" \
 --model_path "/home/jovyan/h800fast/shared/models/Qwen/Qwen2_5/" \
@@ -147,12 +147,12 @@ torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.p
 --warmup_ratio 0.03 \
 --save_strategy "steps" \
 --save_steps 10000 \
---logging_steps 100 \
+--logging_steps 100
 
 
 
 python test.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TEST.json" \
 --output_dir "./test_dir_paramS40HY4/" \
 --model_path "./trainer_dir_paramS40HY4/" \
@@ -164,7 +164,7 @@ python test.py \
 --batch_size 32 \
 --max_new_tokens 64 \
 --do_sample 0 \
---flag "@30000" \
+--flag "@30000"
 
 
 
@@ -185,9 +185,9 @@ python test.py \
 
 ###S56
 torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TRAIN.json" \
---datasets_fnspath "../../datasets/" \
+--datasets_fnspath "../../datasets/Data_lists_cleaned/" \
 --datasets_fnsname "Families.json" \
 --output_dir "./trainer_dir_paramS56HY4/" \
 --model_path "/home/jovyan/h800fast/shared/models/Qwen/Qwen2_5/" \
@@ -214,12 +214,12 @@ torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.p
 --warmup_ratio 0.03 \
 --save_strategy "steps" \
 --save_steps 10000 \
---logging_steps 100 \
+--logging_steps 100
 
 
 
 python test.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TEST.json" \
 --output_dir "./test_dir_paramS56HY4/" \
 --model_path "./trainer_dir_paramS56HY4/" \
@@ -231,4 +231,4 @@ python test.py \
 --batch_size 32 \
 --max_new_tokens 64 \
 --do_sample 0 \
---flag "@30000" \
+--flag "@30000"

@@ -65,7 +65,7 @@ def calcute_recall_false_alarm(ground, predict):
 
 
 ####"test_dir_paramS48HY4/@30000forUnknownAttack"
-with open(os.path.join("../../datasets/", "Families.json"), "r", encoding="utf-8") as file:
+with open(os.path.join("../../datasets/Data_lists_cleaned/", "Families.json"), "r", encoding="utf-8") as file:
     families = json.load(file)
     families = ["<"+item+">" for item in families]
     families.remove("<white>")

@@ -4,9 +4,9 @@
 
 ####NODHGNN
 torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TRAIN.json" \
---datasets_fnspath "../../datasets/" \
+--datasets_fnspath "../../datasets/Data_lists_cleaned/" \
 --datasets_fnsname "Families.json" \
 --output_dir "./trainer_dir_paramS48HY4_NODHGNN/" \
 --model_path "/home/jovyan/h800fast/shared/models/Qwen/Qwen2_5/" \
@@ -39,7 +39,7 @@ torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.p
 
 
 python test.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TEST.json" \
 --output_dir "./test_dir_paramS48HY4_NODHGNN/" \
 --model_path "./trainer_dir_paramS48HY4_NODHGNN/" \
@@ -62,9 +62,9 @@ python test.py \
 
 ####NODifferential
 torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TRAIN.json" \
---datasets_fnspath "../../datasets/" \
+--datasets_fnspath "../../datasets/Data_lists_cleaned/" \
 --datasets_fnsname "Families.json" \
 --output_dir "./trainer_dir_paramS48HY4_NODifferential/" \
 --model_path "/home/jovyan/h800fast/shared/models/Qwen/Qwen2_5/" \
@@ -97,7 +97,7 @@ torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.p
 
 
 python test.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TEST.json" \
 --output_dir "./test_dir_paramS48HY4_NODifferential/" \
 --model_path "./trainer_dir_paramS48HY4_NODifferential/" \
@@ -120,9 +120,9 @@ python test.py \
 
 ####SingleS3
 torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TRAIN.json" \
---datasets_fnspath "../../datasets/" \
+--datasets_fnspath "../../datasets/Data_lists_cleaned/" \
 --datasets_fnsname "Families.json" \
 --output_dir "./trainer_dir_paramS48HY4_SingleS3/" \
 --model_path "/home/jovyan/h800fast/shared/models/Qwen/Qwen2_5/" \
@@ -155,7 +155,7 @@ torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.p
 
 
 python test.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TEST.json" \
 --output_dir "./test_dir_paramS48HY4_SingleS3/" \
 --model_path "./trainer_dir_paramS48HY4_SingleS3/" \
@@ -178,9 +178,9 @@ python test.py \
 
 ####SingleS7
 torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TRAIN.json" \
---datasets_fnspath "../../datasets/" \
+--datasets_fnspath "../../datasets/Data_lists_cleaned/" \
 --datasets_fnsname "Families.json" \
 --output_dir "./trainer_dir_paramS48HY4_SingleS7/" \
 --model_path "/home/jovyan/h800fast/shared/models/Qwen/Qwen2_5/" \
@@ -213,7 +213,7 @@ torchrun --nnodes 1 --nproc_per_node=8 --node_rank=0 --master_port=29900 train.p
 
 
 python test.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TEST.json" \
 --output_dir "./test_dir_paramS48HY4_SingleS7/" \
 --model_path "./trainer_dir_paramS48HY4_SingleS7/" \

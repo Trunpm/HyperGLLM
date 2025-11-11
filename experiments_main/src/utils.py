@@ -228,13 +228,13 @@ class CustomDataCollator:
         return_batch = {}; text_segs_all_values=[]; text_segs_all_mask=[]; text_segs_num = []; messages=[]
         for i in range(len(familys)):
             # if we used get_npz_convenient to get .pkl.gz
-            file_path = os.path.normpath(os.path.join(self.datasets_path, file_paths[i]+".pkl.gz"))
+            file_path = os.path.normpath(os.path.join(self.datasets_path.replace("Data_lists_cleaned/", ""), file_paths[i]+".pkl.gz"))
             with gzip.open(file_path, "rb") as f:
                 loaded_data = pickle.load(f)
                 all_line_values = loaded_data["all_line_values"]
                 all_line_masks = loaded_data["all_line_masks"]
             ## else we read from meta data
-            #file_path = os.path.normpath(os.path.join(self.datasets_path, file_paths[i]))
+            #file_path = os.path.normpath(os.path.join(self.datasets_path.replace("Data_lists_cleaned/", ""), file_paths[i]))
             #loaded_data = readfile(file_path, true_idxs[i], time_lens[i], self.max_time_len)
             #all_line_values = loaded_data["all_line_values"]
             #all_line_masks = loaded_data["all_line_masks"]

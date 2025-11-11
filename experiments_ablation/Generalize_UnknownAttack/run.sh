@@ -2,7 +2,7 @@
 
 
 python test.py \
---datasets_path "../../datasets/" \
+--datasets_path "../../datasets/Data_lists_cleaned/" \
 --datasets_name "TEST_forUnknownAttack.json" \
 --output_dir "./test_dir_paramS48HY4/" \
 --model_path "../../experiments_main/trainer_dir_paramS48HY4/" \
@@ -14,4 +14,4 @@ python test.py \
 --batch_size 32 \
 --max_new_tokens 64 \
 --do_sample 0 \
---flag "@30000forUnknownAttack" \
+--flag "@30000forUnknownAttack"
