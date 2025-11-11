@@ -97,6 +97,7 @@ If you use the EDR3.6B-63F dataset in your research or find our method HyperGLLM
 ```bibtex
 @inproceedings{
   title     = {HyperGLLM: An Efficient Framework for Endpoint Threat Detection via Hypergraph-Enhanced Large Language Models},
-  year      = {2025},
+  year      = {2026},
+  books = {Proceedings of the AAAI Conference on Artificial Intelligence},
 }
 ```
