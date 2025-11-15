@@ -48,7 +48,6 @@ We conduct training on eight NVIDIA H100 (80GB) GPUs and perform evaluation on a
 - *datasets/* — Contains all datasets used in both the main experiments and the ablation study described in the paper.
 - *experiments_main/* — Source code for reproducing the main experiments.
 - *experiments_ablation/* — Source code for reproducing the ablation study experiments in the paper.
-- *experiments_appendix/* — Code used for the appendix experiments included in the paper.
 
 **Install Dependencies**
 
